@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire UID Verifier - SG Server</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <h1>🔥 Free Fire UID Verifier</h1>
+                <p class="subtitle">SG Server / Singapore 🇸🇬</p>
+            </div>
+
+            <div class="input-section">
+                <input 
+                    type="text" 
+                    id="uid" 
+                    placeholder="Enter your Free Fire UID..." 
+                    class="uid-input"
+                >
+                <button id="verifyBtn" onclick="verifyUID()" class="verify-btn">
+                    <span class="btn-text">VERIFY UID</span>
+                    <span class="btn-spinner" style="display: none;">⏳</span>
+                </button>
+            </div>
+
+            <!-- Result Card -->
+            <div id="resultCard" class="result-card" style="display: none;">
+                <div class="result-header">
+                    <h2>✅ Player Found!</h2>
+                </div>
+                <div class="result-body">
+                    <div class="result-row">
+                        <span class="label">Nickname:</span>
+                        <span class="value" id="resNickname">--</span>
+                    </div>
+                    <div class="result-row">
+                        <span class="label">UID:</span>
+                        <span class="value" id="resUid">--</span>
+                    </div>
+                    <div class="result-row">
+                        <span class="label">Server:</span>
+                        <span class="value" id="resServer">--</span>
+                    </div>
+                    <div class="result-row">
+                        <span class="label">Level:</span>
+                        <span class="value" id="resLevel">--</span>
+                    </div>
+                    <div class="result-row">
+                        <span class="label">Rank:</span>
+                        <span class="value" id="resRank">--</span>
+                    </div>
+                    <div class="result-row">
+                        <span class="label">Ranking Points:</span>
+                        <span class="value" id="resPoints">--</span>
+                    </div>
+                    <div class="result-row">
+                        <span class="label">Likes:</span>
+                        <span class="value" id="resLikes">--</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Error Card -->
+            <div id="errorCard" class="error-card" style="display: none;">
+                <div class="error-header">
+                    <span class="error-icon" id="errorIcon">⚠️</span>
+                </div>
+                <div class="error-body">
+                    <h3 id="errorTitle">Error</h3>
+                    <p id="errorDesc">Something went wrong</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Free Fire UID Verifier | SG Server</p>
+            <p><small>Made with ❤️</small></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
